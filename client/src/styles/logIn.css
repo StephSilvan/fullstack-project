@@ -1,0 +1,41 @@
+#logIn_page{
+    background-image: url("/login-backgroud.png");
+}
+
+#account_form{
+    flex: 0.3;  
+}
+
+.form_block_user{
+    flex: 0.4;
+    background-color: rgb(31, 29, 29);
+    /* box-shadow: inset 0 0 25px 5px rgba(198, 97, 97, 0.571); */
+    border-radius: 15px;   
+}
+
+.user_input{
+    width: 100%;
+    height: 70px;
+    border: none;
+}
+
+#Log_In{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+#signUp-block{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 60px;
+    color: white;   
+}
+
+#signUp-block a{
+    color: rgb(235, 47, 14);
+}
+
+
+
+

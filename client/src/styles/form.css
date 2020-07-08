@@ -1,0 +1,49 @@
+
+.user_page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;  
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover;   
+    color: white;
+}
+
+.add_user_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.add_form_group{
+    margin-top: 20px;
+}
+
+.form_content{
+    padding: 70px;  
+   
+}
+
+.add_form_label{
+    font-size: 3em; 
+}
+
+.add_form_control{  
+    font-size: 1.7em;
+    padding: 0 10px;
+    margin: 8px 0;
+    border-radius: 4px; 
+}
+
+.user_action_btn{
+    background-color: rgb(142, 28, 8);
+    width: 45%;
+    height: 80px;
+    font-size: 2em;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: inset 0 0 10px 5px rgba(26, 25, 25, 0.571); */
+
+}

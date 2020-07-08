@@ -1,0 +1,52 @@
+#add_character_page{
+    background-image: url("/add-character-background.jpg");
+    background-size: cover; 
+    background-position: center;
+    height: 2000px;
+}
+
+#add_character{
+    flex: 0.5;
+}
+
+#form_block_character{
+    opacity: 0.85;  
+}
+
+#add_character_heading{
+    padding: 5px;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(31, 29, 29);
+}
+
+#character_form_content{
+    background-color:  rgb(31, 29, 29);
+   
+}
+
+.character_form_group{
+    margin: 20px;
+    
+}
+
+.character_label{
+    float: left;
+    margin-right: 30px;
+}
+
+.character_input{
+    width: 40%;
+    height: 50px;  
+    background-color:  rgb(31, 29, 29);
+    border-bottom: 1px solid gray;
+    border-right: 0;
+}
+
+.skill_input{
+    width: 12%;
+    height: 50px;  
+    background-color:  rgb(31, 29, 29);
+    border: 1px solid gray;
+}

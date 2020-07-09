@@ -31,13 +31,8 @@
 
 #new_character_btns{
     width: 370px;
-    height: 75px;
-    color: white;
     font-weight: bold;
     font-size: 1em;
-    background-color:  rgb(142, 28, 8);
-    border: none;
-    border-radius: 10px;
 }
 
 #myCharacters_title{

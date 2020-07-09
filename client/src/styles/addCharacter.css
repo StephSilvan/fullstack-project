@@ -1,12 +1,10 @@
 #add_character_page{
-    background-image: url("/add-character-background.jpg");
-    background-size: cover; 
-    background-position: center;
-    height: 2000px;
+   
 }
 
 #add_character{
     flex: 0.5;
+    margin-top: 30px;
 }
 
 #form_block_character{
@@ -25,10 +23,15 @@
     background-color:  rgb(31, 29, 29);
    
 }
-
+#myCharacters_title{
+    color: black;
+}
 .character_form_group{
-    margin: 20px;
-    
+    margin: 20px;  
+}
+
+.add_character_form{
+    font-size: 3em;
 }
 
 .character_label{
@@ -36,17 +39,20 @@
     margin-right: 30px;
 }
 
-.character_input{
-    width: 40%;
+.character_input{ 
+    margin-left: 40px;
+    font-size: 0.5em;
     height: 50px;  
-    background-color:  rgb(31, 29, 29);
-    border-bottom: 1px solid gray;
-    border-right: 0;
+    background-color:  rgb(31, 29, 29);  
+    border: none;
+    border-right: 0;  
+    color: #8D9095;    
+}
+
+.basic_input{
+    width: 30%;
 }
 
 .skill_input{
     width: 12%;
-    height: 50px;  
-    background-color:  rgb(31, 29, 29);
-    border: 1px solid gray;
 }

@@ -40,7 +40,6 @@ class Home extends React.Component {
 
   render() {
     const { characters, loading } = this.state;
-
     if (loading) {
       return (
         <div id="home">
@@ -55,7 +54,7 @@ class Home extends React.Component {
           <div id="myCharacters_heading">
             <div className="action_btns" id="add_character_btn_top">
               <Link to="/createCharacter/">
-                <button id="new_character_btns" className="" type="button">
+                <button id="new_character_btns" className="user_action_btn" type="button">
                   Create new character
                 </button>
               </Link>
@@ -87,18 +86,6 @@ class Home extends React.Component {
                         <li className="character_info">
                           <p>Level {item.level}</p>
                         </li>
-
-                        {/* {item.strength}
-
-                                {item.dexterity}
-
-                                {item.constitution}
-
-                                {item.intelligence}
-
-                                {item.wisdom}
-
-                                {item.charisma} */}
                       </ul>
                     </div>
 

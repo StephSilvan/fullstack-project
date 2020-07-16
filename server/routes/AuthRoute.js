@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const passport = require("passport");
+
 const {
     generateAccessToken,
     authenticate,
@@ -9,6 +10,7 @@ const {
 const User = require("../models/User");
 
 module.exports = (app) => {
+    // register user
     app.post("/account/register", (req, res) => {       
         User.register(
             new User({ username: req.body.email }), req.body.password,
@@ -21,9 +23,9 @@ module.exports = (app) => {
                 });
             }
         );
-
     });
 
+    // login user
     app.post(
         "/account/login",
         passport.authenticate("local", { session: false, scope: [] }),
@@ -31,7 +33,24 @@ module.exports = (app) => {
         respond
     );
 
+   //get all users
+    app.get("/account/all", (req,res) => {    
+                User.find({}, (err, Users) => {
+                    if (err) {
+                        console.log('Error', err);
+                    }
+                    return res.json(Users);
+                });
+    });
+
+    //get current user
     app.get("/account/me", authenticate, (req, res) => {
         res.status(200).json(req.user);
+    });
+
+    //logout 
+    app.get('/logout', function(req, res){
+        req.logout();
+        res.redirect('/signIn')
     });
 };

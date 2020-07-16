@@ -5,11 +5,8 @@ const passport = require("passport");
 
 const LocalStrategy = require("passport-local").Strategy;
 
-
-
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
-    
+    require('dotenv').config();   
 }
 
 try {
@@ -23,7 +20,7 @@ try {
 };
 
 
-const app = express();
+const app = express();    
 
 app.use(bodyParser.json());
 
@@ -45,10 +42,10 @@ passport.use(
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-require('./routes/CharacterRoute')(app);
-require('./routes/AccountRoute')(app);
-require('./routes/UsersListRoute')(app);
 require('./routes/AuthRoute')(app);
+require('./routes/CharacterRoute')(app);
+require('./routes/UsersListRoute')(app);
+
 
 
 app.get('/', (req,res) => {
@@ -57,4 +54,3 @@ app.get('/', (req,res) => {
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Example app listening at http://localhost: ${PORT}`));
-

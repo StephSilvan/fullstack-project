@@ -14,15 +14,12 @@ class App extends Component {
     return (
       <div className="container">
         <BrowserRouter>
-       
-        <div>
           <Route exact path="/" component={home} />
           <Route exact path="/createCharacter" component={CreateCharacter} />
           <Route exact path="/createAccount" component={CreateAccount} />
           <Route exact path="/signIn" component={SignIn} />
           <Route exact path="/userlist" component={userlist} />
           <Route exact path="/characterSheet/:id" component={CharacterSheet} />
-        </div>
         </BrowserRouter>
       </div>
     );

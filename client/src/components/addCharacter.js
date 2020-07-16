@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { withRouter } from "react-router";
-import { Link } from "react-router-dom";
 import { LEVEL_OPTIONS, SKILL_OPTIONS } from "../config";
+
 import "../styles/addCharacter.css";
 import "../styles/form.css";
 
@@ -99,25 +99,9 @@ class AddCharacter extends React.Component {
   };
 
   render() {
-    return (
-      <div className="user_page" id="add_character_page">
-        <div id="myCharacters_content">
-          <div id="myCharacters_heading">
-            <div className="action_btns" id="add_character_btn_top">
-              <Link to="/">
-                <button id="new_character_btns" className="user_action_btn" type="button">
-                  Back to my characters
-                </button>
-              </Link>
-            </div>
-            <div id="myCharacters_title">
-              <h1>Create Character</h1>
-            </div>
-          </div>
-
-        <form className="add_user_form" id="add_character">
-          <div id="form_block_character">
-            <div className="form_content" id="character_form_content">
+    return (      
+          <div id="add_character">
+            <div id="add_character_content">
               <div className="character_form_group">
                 <label className="add_character_form">
                   Character Name:
@@ -142,7 +126,7 @@ class AddCharacter extends React.Component {
                     type="text"
                     className="character_input basic_input"
                     placeholder="">
-                    <option selected value="race">
+                    <option defaultValue="race">
                       choose your race
                     </option>
                     <option value="human">Human</option>
@@ -166,7 +150,7 @@ class AddCharacter extends React.Component {
                     className="character_input basic_input"
                     placeholder=""
                   >
-                  <option selected value="class">
+                  <option defaultValue="class">
                       choose your class
                   </option>
                   <option value="wizard">Wizard</option>
@@ -192,7 +176,7 @@ class AddCharacter extends React.Component {
                   >
                     {LEVEL_OPTIONS.map((item) => {
                       return(
-                      <option>{item}</option>
+                      <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -213,7 +197,7 @@ class AddCharacter extends React.Component {
                   >
                     {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -233,7 +217,7 @@ class AddCharacter extends React.Component {
                   >
                     {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -253,7 +237,7 @@ class AddCharacter extends React.Component {
                   >
                      {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -274,7 +258,7 @@ class AddCharacter extends React.Component {
                   >
                      {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -294,7 +278,7 @@ class AddCharacter extends React.Component {
                   >
                      {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -315,7 +299,7 @@ class AddCharacter extends React.Component {
                   >
                     {SKILL_OPTIONS.map((item) => {
                       return(
-                        <option>{item}</option>
+                        <option key={item}>{item}</option>
                       )
                     })}
                   </select>
@@ -323,10 +307,11 @@ class AddCharacter extends React.Component {
               </div>
               <br />
 
-              <div className="character_form_group" id="action_btns">
+              <div className="character_form_group" id="create_character_btn_div">
                 
                 <button
-                  className="user_action_btn"
+                  id="create_character_btn"
+                  className="action_btns"
                   type="button"
                   onClick={this.publish}
                 >
@@ -334,10 +319,7 @@ class AddCharacter extends React.Component {
                 </button>
               </div>
             </div>
-          </div>
-        </form>
-        </div>
-      </div>
+          </div>       
     );
   }
 }

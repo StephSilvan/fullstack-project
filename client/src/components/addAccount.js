@@ -47,7 +47,7 @@ class AddAccount extends React.Component {
           password: this.state.password
         };
         axios
-            .post("/adduser", newAccount, {
+            .post("/account/register", newAccount, {
                 headers: { "Content-Type": "application/json" },
             })
             .then((res) => {
@@ -61,11 +61,9 @@ class AddAccount extends React.Component {
     };
 
     render() {
-        return (
-            <div className="user_page" id="logIn_page">
-            <form className="add_user_form" id="account_form">
-                <div className="form_block_user">
-                    <div className="form_content">
+        return (               
+                <div className="auth_form_content">
+                    <div className="form_block_user">
                     <div className="add_form_group">
                         <label className="add_form_label"> Username </label>
                         <div className="textInput">
@@ -112,16 +110,14 @@ class AddAccount extends React.Component {
                     </div>
                     <br />
 
-                    <div className="add_form_group" id="Log_In">
-                        <button className="user_action_btn" type="button" onClick={this.publish}>
+                    <div className="add_form_group log_In">                       
+                        <button className="action_btns sign_btn" type="button" onClick={this.publish}>
                             SIGN UP
-                        </button>
+                        </button>                        
                     </div>
                     </div>
-                </div> 
 
-            </form>
-            </div>
+                </div>    
         );
     }
 }

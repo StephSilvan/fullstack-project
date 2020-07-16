@@ -1,12 +1,14 @@
 import React from "react";
 import AddCharacter from "../components/addCharacter";
-import '../styles/addCharacter.css';
+import Header from "../components/header";
+
+
 
 const CreateCharacter = () => (
-    <div id="create">
-        <div id="main_content">
+    <div className="page">
+        <div className="page_content">
+            <Header directto="" btnlabel="Back to my characters" pagetitle="Create character" />
             <AddCharacter />
-
         </div>
     </div>
 

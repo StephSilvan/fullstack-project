@@ -16,7 +16,7 @@ class logIn extends React.Component {
 
   componentDidMount() {
     axios
-      .get("user/all")
+      .get("account/all")
       .then((res) => {
         this.setState({
           users: res.data,
@@ -55,11 +55,9 @@ class logIn extends React.Component {
   };
 
   render() {
-    return (
-      <div className="user_page" id="logIn_page">
-        <form className="add_user_form" id="account_form">
-          <div className="form_block_user">
-            <div className="form_content">
+    return (        
+          <div className="auth_form_content">
+            <div className="form_block_user">
             <div className="add_form_group">
               <label className="add_form_label"> Email </label>
               <div className="textInput">
@@ -88,24 +86,27 @@ class logIn extends React.Component {
             </div>
             <br />
 
-            <div className="add_form_group" id="Log_In" >
-              <button className="user_action_btn" type="button" onClick={this.login}>
+            <div className="add_form_group log_In" >
+            <Link to="/">
+              <button className="action_btns sign_btn" type="button" onClick={this.login}>
                 LOG IN
               </button>
+            </Link>
             </div>
 
             <div className="add_form_group" id="signUp-block">
               <p>NEW USER?</p>
               <Link to="/createAccount">
-                <a type="button" onClick={this.publish}>
+                <button type="button" onClick={this.publish}>
                   SIGN UP
-                </a>
+                </button>
               </Link>
             </div>
             </div>
           </div>
-        </form>
-      </div>
+         
+        
+   
     );
   }
 }

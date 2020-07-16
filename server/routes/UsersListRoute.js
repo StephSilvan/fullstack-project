@@ -1,22 +1,22 @@
 const mongoose = require('mongoose');
 
-const Account = require("../models/Account");
+const User = require("../models/User");
 
 module.exports = (app) => {
     
-    app.get("/user/all", (req,res) => {    
-        Account.find({}, (err, Accounts) => {
+    app.get("/account/all", (req,res) => {    
+        User.find({}, (err, Users) => {
             if (err) {
                 console.log('Error', err);
             }
-            return res.json(Accounts);
+            return res.json(Users);
         });
     });
 
-    app.delete("/user/:id", (req, res) => {
-        Account.deleteOne({
+    app.delete("/account/:id", (req, res) => {
+        User.deleteOne({
             _id: req.params.id
-        }, (err, Account) => {
+        }, (err, user) => {
             if (err) {
                 console.log('Error', err);
             }

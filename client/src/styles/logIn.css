@@ -1,39 +1,73 @@
-#logIn_page{
-    background-image: url("/login-backgroud.png");
+#auth_page{
+    background-image: url("/login-background01.jpg");
+    background-repeat: no-repeat;  
+    background-position: center;
+    background-size: cover; 
 }
 
-#account_form{
-    flex: 0.3;  
+.auth_page_content{
+    display: flex;
+    justify-content: center;
+}
+
+.auth_form_content{
+    flex: 0.45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .form_block_user{
-    flex: 0.4;
-    background-color: rgb(31, 29, 29);
-    /* box-shadow: inset 0 0 25px 5px rgba(198, 97, 97, 0.571); */
+    flex: 0.4;   
+    background-color: rgb(23, 22, 22);
     border-radius: 15px;   
+    padding: 60px 60px 0 60px; 
+}
+
+.add_form_label{
+    font-size: 3em; 
 }
 
 .user_input{
     width: 100%;
-    height: 70px;
+    height: 80px;
     border: none;
 }
 
-#Log_In{
-    text-align: center;
-    margin-top: 40px;
-}
-
-
 #signUp-block{
-    font-size: 2em;
     text-align: center;
     margin-top: 60px;
     color: white;   
 }
 
-#signUp-block a{
+.log_In{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sign_btn{
+    width: 300px;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    font-size: 2em;
+    background-color: rgb(220, 30, 24);
+    color: white;
+    text-align: center;
+}
+
+#signUp-block p{
+    font-size: 2em;
+    padding-top: 25px;
+}
+
+#signUp-block button{
+    font-size: 2em;
+    border: none;
+    border-bottom: 1px solid  rgb(235, 47, 14);
+    background-color: rgb(23, 22, 22);
     color: rgb(235, 47, 14);
+    
 }
 
 

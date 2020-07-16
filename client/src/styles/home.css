@@ -1,48 +1,4 @@
-.container{
-    width: 100vw;
-    display: flex;
-    justify-content: center;  
-}
-
-#home{
-    position: relative;
-    width: 63vw;
-    height: 100vw; 
-}
-
-#myCharacters_content{
-    position: absolute;
-    width: 63vw;
-    height: 100vw;
-    margin-top: 100px;
-    padding: 0;   
-}
-
-#myCharacters_heading{
-    height: 200px;
-    border-bottom: 5px solid gray;   
-}
-
-#add_character_btn_top{
-    float: right;
-    font-size: 2em;
-    margin: 20px 70px 0 0;
-}
-
-#new_character_btns{
-    width: 370px;
-    font-weight: bold;
-    font-size: 1em;
-}
-
-#myCharacters_title{
-    font-size: 2.5em;
-    padding-top: 40px;
-    margin-left: 70px;
-
-}
-
-.character_card_block{
+#character_card_block{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -50,24 +6,21 @@
 }
 
 .character_card{
-    min-width: calc((100%) / 4);
-    height: 700px;   
+    min-width: calc((100%) / 3);
+    height: 700px; 
 }
 
 .character_card_content{
     width: 95%;
     height: 600px;
-    margin: 50px 10px 50px 10px;
-    
+    margin: 50px 10px 50px 10px;  
 }
 
 .myCharacters{
-    background-color: white;
+    background-color: white; 
     border: 1px solid rgb(116, 159, 187);
     height: 480px;
     font-size: 2em;  
-   
-
 }
 
 .character_profile{

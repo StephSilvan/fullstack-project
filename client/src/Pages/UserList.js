@@ -14,10 +14,10 @@ class UserList extends React.Component {
 
     componentDidMount() {  
         axios 
-        .get("/user/all")
+        .get("/account/all")
         .then((res) => {
             this.setState({
-                users: res.data,
+                accounts: res.data,
                 loading: false,   
             });   
         })
@@ -27,7 +27,7 @@ class UserList extends React.Component {
     }
 
     delete = (id) => {
-        axios.delete(`/user/${id}`, {})
+        axios.delete(`/account/${id}`, {})
         .then((res) => {
             this.setState({
                 status: "Deleted!"
@@ -37,11 +37,10 @@ class UserList extends React.Component {
     }
 
     render() {
-        const { users, loading } = this.state;
-        
+        const { accounts, loading } = this.state;
         if(loading) {
             return (
-                <div id="userList">
+                <div id="accountList">
                     <Spinner />
                 </div>
             );
@@ -49,7 +48,7 @@ class UserList extends React.Component {
         
         return (
             <div id="home">
-                {users.map((item) => {
+                {accounts.map((item) => {
                     return (
                         <li className="userlist" key={item._id}>
                             {"New user: "}

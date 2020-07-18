@@ -6,7 +6,7 @@ const MyCharacterSchema = new Schema ({
     race: String,
     class: String,
     level: Number,
-    strenth: Number,
+    strength: Number,
     dexterity: Number,
     constitution: Number,
     intelligence: Number,

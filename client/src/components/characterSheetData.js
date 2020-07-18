@@ -43,19 +43,55 @@ class CharacterSheetData extends React.Component {
       );
     }
     return (
-        <div className="charactersheet_detail">
-            <p>{character.name}</p>
-            <p>{character.race}</p>
-            <p>{character.class}</p>
-            <p>{character.level}</p>
-            <p>{character.strength}</p>
-            <p>{character.dexterity}</p>
-            <p>{character.constitution}</p>
-            <p>{character.intelligence}</p>
-            <p>{character.wisdom}</p>
-            <p>{character.charisma}</p>  
-            
-        </div>                
+      <div id="charactersheet_detail">
+        <div id="frofile_block">
+          <div id="basic_info_block"></div>
+          <div id="cha_pic_block"></div>
+        </div>
+
+        <div id="cha_core_info">
+          <div className="block" id="block_01">
+            <div id="core_skill_block">
+              <div className="core_skill">
+                <p>{character.strength}</p>
+              </div>
+              <div className="core_skill">
+                <p>{character.dexterity}</p>
+              </div>
+              <div className="core_skill">
+                <p>{character.constitution}</p>
+              </div>
+              <div className="core_skill">
+                <p>{character.intelligence}</p>
+              </div>
+              <div className="core_skill">
+                <p>{character.wisdom}</p>
+              </div>
+              <div className="core_skill">
+                <p>{character.charisma}</p>
+              </div>
+            </div>
+            <div id="skill_2">
+              <div id="pro_bonus"></div>
+              <div id="saving_throws"></div>
+              <div id="skill_details"></div>
+            </div>
+          </div>
+          <div className="block" id="block_02">
+            <div id="quick_info"></div>
+            <div id="hit_points"></div>
+            <div id="atk_spl"></div>
+          </div>
+        
+          <div className="block" id="block_03"></div>
+        </div>
+        <div>
+          <p>{character.name}</p>
+          <p>{character.race}</p>
+          <p>{character.class}</p>
+          <p>{character.level}</p>
+        </div>
+      </div>
     );
   }
 }

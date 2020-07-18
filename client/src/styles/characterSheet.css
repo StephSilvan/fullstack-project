@@ -1,0 +1,81 @@
+#Csheet_page{
+    color: white;
+    height: 100%;
+}
+
+#charactersheet_detail{  
+    margin: 50px;    
+}
+
+#frofile_block{
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#basic_info_block{
+    flex: 3;
+    margin: 75px 40px 0 0;
+    height: 300px;
+    background-color:#F2EECB;
+    border-radius: 30px;
+    box-shadow: 0 3px 6px #F2EECB, 0 3px 6px #F2EECB;  
+}
+
+#cha_pic_block{
+    flex: 1;
+    height: 450px;
+    background-image: url("/csheet_profile.jpg");
+    background-repeat: no-repeat;  
+    background-position: center;
+}
+
+#cha_core_info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.block{
+    height: 2000px;
+    margin: 20px;
+}
+
+#block_01{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellowgreen;
+}
+
+#core_skill_block{
+    flex:1;
+    margin-top: 150px;
+    background-color: darksalmon;
+}
+
+#skill_2{
+    flex: 2;
+    margin-top: 40px;
+    height: 1960px;
+    background-color: darkorange;
+}
+
+.core_skill{
+    width: 150px;
+    height: 200px;
+    margin: 50px;
+    font-size: 2em;
+    text-align: center;
+    background-color: crimson;
+}
+
+#block_02{
+    flex: 3;
+    background-color: violet;
+}
+
+#block_03{
+    flex: 4;
+    background-color: cornflowerblue;
+}

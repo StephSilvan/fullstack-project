@@ -10,7 +10,7 @@ module.exports = (app) => {
         newCharacter.race = req.body.race;
         newCharacter.class = req.body.class;
         newCharacter.level = req.body.level;
-        newCharacter.strenth = req.body.strenth;
+        newCharacter.strength = req.body.strength;
         newCharacter.dexterity = req.body.dexterity;
         newCharacter.constitution = req.body.constitution;
         newCharacter.intelligence = req.body.intelligence;

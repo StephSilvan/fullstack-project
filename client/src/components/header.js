@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/form.css";
 
+
 export const Header = (props) => (
     <div className="page_header">
         <div className="header_btn_div">
@@ -12,7 +13,7 @@ export const Header = (props) => (
               </Link>
         </div>
         <div className="header_title">
-            <h1>{props.pagetitle}</h1>
+          <h1 style={props.sheethead}>{props.pagetitle}</h1>
         </div>
     </div>
 

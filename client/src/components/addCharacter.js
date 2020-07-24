@@ -129,12 +129,15 @@ class AddCharacter extends React.Component {
                     <option defaultValue="race">
                       choose your race
                     </option>
-                    <option value="human">Human</option>
-                    <option value="elf">Elf</option>
-                    <option value="dwarf">Dwarf</option>
-                    <option value="halfling">Halfling</option> 
-                    <option value="half-orc">Half-Orc</option>
-                    <option value="half-elf">Half-Elf</option>
+                    <option value="Human">Human</option>
+                    <option value="Elf">Elf</option>
+                    <option value="Dwarf">Dwarf</option>
+                    <option value="Halfling">Halfling</option> 
+                    <option value="Half-Orc">Half-Orc</option>
+                    <option value="Half-Elf">Half-Elf</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Dragonborn">Dragonborn</option>
+                    <option value="Tiefling">Tiefling</option>
                   </select>
                 </label>
               </div>
@@ -153,12 +156,12 @@ class AddCharacter extends React.Component {
                   <option defaultValue="class">
                       choose your class
                   </option>
-                  <option value="wizard">Wizard</option>
-                  <option value="fighter">Fighter</option>
-                  <option value="paladin">Paladin</option>
-                  <option value="rogue">Rogue</option> 
-                  <option value="ranger">Ranger</option>
-                  <option value="cleric">Cleric</option>
+                  <option value="Wizard">Wizard</option>
+                  <option value="Fighter">Fighter</option>
+                  <option value="Paladin">Paladin</option>
+                  <option value="Rogue">Rogue</option> 
+                  <option value="Ranger">Ranger</option>
+                  <option value="Cleric">Cleric</option>
                   </select>
                 </label>
               </div>

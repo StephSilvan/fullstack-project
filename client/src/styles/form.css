@@ -39,7 +39,8 @@
 }
 
 .add_form_group{
-    margin-top: 20px;
+    flex: 3;
+
 }
 
 .form_content{

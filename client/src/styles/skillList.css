@@ -1,0 +1,25 @@
+.skill_list{
+    display: flex;
+    margin-top: 24px;
+    font-size: 1.6em;
+}
+
+.li_item{
+    flex: 2;
+    margin-right: 15px;   
+}
+
+.li_item_skill{
+    flex: 6;
+}
+
+.skills_heading {
+    color: #838383;
+    font-weight: 700;
+}
+
+.bonus_box{
+    text-align: center;
+    width: 70%;
+    height: 70%;
+}

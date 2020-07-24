@@ -37,6 +37,7 @@ class CharactersMap extends React.Component {
     });
   };
 
+
   render() {
     const { characters, loading } = this.state;
     if (loading) {
